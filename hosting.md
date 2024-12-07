@@ -41,10 +41,35 @@ git clone your_project_url
 python3 -m virtualenv venv
 source venv/bin/activate
 ```
-
-### Step 10: Update Django Settings
+### Install django and pillow
+ ```bash
+pip install django
+pip install pillow
+or
+pip3 install requirements.txt
+```
+### Step 10: Update Django Settings.py
 ```python
 ALLOWED_HOSTS = ['132.168.1.231','your_domain.com', 'www.your_domain.com']
 ```
+### Step 10: Set the same ip in cloudfare
 
-
+### Step 10: Run the code in server
+```python
+python manage.py runserver 0.0.0.0:80
+```
+### Step 10: Code For Error: That port is already in use.
+```python
+sudo systemctl stop nginx
+```
+### Step 10: Code For programe prmanently run
+```python
+nohupython manage.py runserver 0.0.0.0:80 &
+```
+### Step 10: Code For Admin pannel run(set in settings.py)
+```python
+CSRF_TRUSTED_ORIGINS = [
+    "https://yogeshbharati.com",
+    "https://www.yogeshbharati.com",  # If applicable
+]
+```
