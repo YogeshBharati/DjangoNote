@@ -11,7 +11,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 ### Step 4: Show the pubic key for connect github
 ```
-cat  your_server_publickey(which key add in github setting)
+cat  your_server_publickey
 ```
 
 ### Step 5: Update and Upgrade Packages
@@ -41,32 +41,32 @@ git clone your_project_url
 python3 -m virtualenv venv
 source venv/bin/activate
 ```
-### Install django and pillow
+### step 10: Install django and pillow
  ```bash
 pip install django
 pip install pillow
 or
 pip3 install requirements.txt
 ```
-### Step 10: Update Django Settings.py
+### Step 11: Update Django Settings.py
 ```python
 ALLOWED_HOSTS = ['132.168.1.231','your_domain.com', 'www.your_domain.com']
 ```
-### Step 10: Set the same ip in cloudfare
+### Step 12: Set the same ip in cloudfare
 
-### Step 10: Run the code in server
+### Step 13: Run the code in server
 ```python
 python manage.py runserver 0.0.0.0:80
 ```
-### Step 10: Code For Error: That port is already in use.
+### Step 14: Code For Error: That port is already in use.
 ```python
 sudo systemctl stop nginx
 ```
-### Step 10: Code For programe prmanently run
+### Step 15: Code For programe prmanently run
 ```python
 nohupython manage.py runserver 0.0.0.0:80 &
 ```
-### Step 10: Code For Admin pannel run(set in settings.py)
+### Step 16: Code For Admin pannel run(set in settings.py)
 ```python
 CSRF_TRUSTED_ORIGINS = [
     "https://yogeshbharati.com",
