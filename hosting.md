@@ -13,7 +13,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
 cat  your_server_publickey
 ```
-### Step 5: Add This Public key on your git repo'S settings
+### Step 5: Add This Public key on your git repo's settings
 
 ### Step 6: Update and Upgrade Packages
 ```bash
