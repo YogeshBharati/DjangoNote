@@ -65,7 +65,7 @@ sudo systemctl stop nginx
 ```
 ### Step 16: Code For programe prmanently run
 ```python
-nohupython manage.py runserver 0.0.0.0:80 &
+nohup python3 manage.py runserver 0.0.0.0:80 &
 ```
 ### Step 17: Code For Admin pannel run(set in settings.py)
 ```python
